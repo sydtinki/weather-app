@@ -12,7 +12,7 @@ app.post('/weather', async (req, res) => {
   const { location } = req.body;
 
   try {
-    const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
+    const apiKey = '98d61540d3bad3101f2d18991cf06335';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
     const response = await axios.get(apiUrl);
